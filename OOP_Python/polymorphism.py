@@ -30,4 +30,4 @@ class Calculator:
 
 calc = Calculator()
 print(calc.add(2, 3)) 
-print(calc.add(2)) 
+print(calc.add(2))

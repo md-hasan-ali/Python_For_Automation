@@ -44,32 +44,48 @@
 
 
 
-str = "Bangladeshljsldfjlsdjflsjdflkjsd"
-result = ""
-for i in range(0, len(str), 2):
-    result =  result + str[i+1]
-    result = result + str[i]
+# str = "Bangladeshljsldfjlsdjflsjdflkjsd"
+# result = ""
+# for i in range(0, len(str), 2):
+#     result =  result + str[i+1]
+#     result = result + str[i]
 
-print(result)
-
-
-result = ""
-result2 = ""
-newresult = ""
-for i, char in enumerate(str):
-    if i % 2 == 0:
-        result += char
-    else:
-        result += char
+# print(result)
 
 
-for r1 in result:
-    newresult += r1
-    for r2 in result2:
-        newresult += r2
+# result = ""
+# result2 = ""
+# newresult = ""
+# for i, char in enumerate(str):
+#     if i % 2 == 0:
+#         result += char
+#     else:
+#         result += char
 
 
-print(newresult)
+# for r1 in result:
+#     newresult += r1
+#     for r2 in result2:
+#         newresult += r2
 
-result = str[1] + str[0] + str[3] + str[2]
-print(result)
+
+# print(newresult)
+
+# result = str[1] + str[0] + str[3] + str[2]
+# print(result)
+
+
+# Paractice Fibonacchi Seris 
+def find_fib(n):
+    if n <= 2:
+        return 1
+    fib_x, fib_next = 1,1 
+
+    i=3
+    while i <= n:
+        i += 1
+        fib_x, fib_next = fib_next, fib_x + fib_next
+        return fib_next
+    
+for x in range(1, 11):
+    print(find_fib(x))
